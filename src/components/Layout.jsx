@@ -30,7 +30,7 @@ function Layout() {
   ]
   return (
     
-    <div  ref={ref} className="layoutDetails flex gap-4  text-white z-10 w-full h-screen relative overflow-hidden py-[4vh] px-4">
+    <div  ref={ref} className="layoutDetails grid grid-cols-3 gap-4 md:grid-cols-3 text-white z-10 w-screen h-screen relative overflow-hidden py-[4vh] px-4">
   
       {data.map((item,index)=>(
         <Card key={item.id} refc={ref} data={item} />
