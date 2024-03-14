@@ -6,7 +6,7 @@ import { motion } from 'framer-motion'
 function Card(props) {
   return (
     <div>
-      <motion.div  drag dragConstraints={props.ref} whileDrag={{scale:1.1}}  className=" card relative capitalize bg-zinc-900/20 h-[40vh] w-[55vw] sm:h-[40vh] sm:w-[40vw] md:h-[40vh] md:w-[32vw] lg:h-[40vh] lg:w-[14vw]  rounded-[40px] text-white overflow-hidden ">
+      <motion.div  drag dragConstraints={props.refc} whileDrag={{scale:1.1}}  className=" card relative capitalize bg-zinc-900/20 h-[40vh] w-[55vw] sm:h-[40vh] sm:w-[40vw] md:h-[40vh] md:w-[32vw] lg:h-[40vh] lg:w-[14vw]  rounded-[40px] text-white overflow-hidden ">
       <div className=" px-[20px] py-8">
       <span className='pb-4 my-2'>
           <FaRegFileAlt size="1.1em"/>
