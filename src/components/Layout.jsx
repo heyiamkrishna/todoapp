@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import Card from "./Card";
-function Layout() {
+function Layout(props) {
   const ref = useRef(null);
 
   
@@ -30,10 +30,10 @@ function Layout() {
   ]
   return (
     
-    <div  ref={ref} className="layoutDetails grid grid-cols-3 gap-4 md:grid-cols-3 text-white z-10 w-screen h-screen relative overflow-hidden py-[4vh] px-4">
+    <div className="layoutDetails grid grid-cols-3 gap-4 md:grid-cols-3 text-white z-10 w-screen h-screen relative overflow-hidden py-[4vh] px-4">
   
       {data.map((item,index)=>(
-        <Card key={item.id} refc={ref} data={item} />
+        <Card key={item.id} refc={props.ref} data={item} />
       ))}
     </div>
   );
